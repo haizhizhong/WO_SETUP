@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCostingEqiClass" targetNamespace="http://tempuri.org/dsCostingEqiClass.xsd" xmlns:mstns="http://tempuri.org/dsCostingEqiClass.xsd" xmlns="http://tempuri.org/dsCostingEqiClass.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCostingEqiClass" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCostingEqiClass" msprop:Generator_DataSetName="dsCostingEqiClass">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="costing_equipment_class" msprop:Generator_UserTableName="costing_equipment_class" msprop:Generator_RowDeletedName="costing_equipment_classRowDeleted" msprop:Generator_RowChangedName="costing_equipment_classRowChanged" msprop:Generator_RowClassName="costing_equipment_classRow" msprop:Generator_RowChangingName="costing_equipment_classRowChanging" msprop:Generator_RowEvArgName="costing_equipment_classRowChangeEvent" msprop:Generator_RowEvHandlerName="costing_equipment_classRowChangeEventHandler" msprop:Generator_TableClassName="costing_equipment_classDataTable" msprop:Generator_TableVarName="tablecosting_equipment_class" msprop:Generator_RowDeletingName="costing_equipment_classRowDeleting" msprop:Generator_TablePropName="costing_equipment_class">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cer_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="cer_id" msprop:Generator_ColumnPropNameInRow="cer_id" msprop:Generator_ColumnVarNameInTable="columncer_id" msprop:Generator_ColumnPropNameInTable="cer_idColumn" type="xs:int" />
+              <xs:element name="pri_id" msprop:Generator_UserColumnName="pri_id" msprop:Generator_ColumnPropNameInRow="pri_id" msprop:Generator_ColumnVarNameInTable="columnpri_id" msprop:Generator_ColumnPropNameInTable="pri_idColumn" type="xs:int" />
+              <xs:element name="eqi_Class" msprop:Generator_UserColumnName="eqi_Class" msprop:Generator_ColumnPropNameInRow="eqi_Class" msprop:Generator_ColumnVarNameInTable="columneqi_Class" msprop:Generator_ColumnPropNameInTable="eqi_ClassColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rate" msprop:Generator_UserColumnName="rate" msprop:Generator_ColumnPropNameInRow="rate" msprop:Generator_ColumnVarNameInTable="columnrate" msprop:Generator_ColumnPropNameInTable="rateColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ber_type" msprop:Generator_UserColumnName="ber_type" msprop:Generator_ColumnPropNameInRow="ber_type" msprop:Generator_ColumnVarNameInTable="columnber_type" msprop:Generator_ColumnPropNameInTable="ber_typeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="rate_desc" msprop:Generator_UserColumnName="rate_desc" msprop:Generator_ColumnPropNameInRow="rate_desc" msprop:Generator_ColumnVarNameInTable="columnrate_desc" msprop:Generator_ColumnPropNameInTable="rate_descColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CostRate" msprop:Generator_UserColumnName="CostRate" msprop:Generator_ColumnPropNameInRow="CostRate" msprop:Generator_ColumnVarNameInTable="columnCostRate" msprop:Generator_ColumnPropNameInTable="CostRateColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UseEquipOverride" msprop:Generator_UserColumnName="UseEquipOverride" msprop:Generator_ColumnPropNameInRow="UseEquipOverride" msprop:Generator_ColumnVarNameInTable="columnUseEquipOverride" msprop:Generator_ColumnPropNameInTable="UseEquipOverrideColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="sch_enabled" msprop:Generator_UserColumnName="sch_enabled" msprop:Generator_ColumnVarNameInTable="columnsch_enabled" msprop:Generator_ColumnPropNameInRow="sch_enabled" msprop:Generator_ColumnPropNameInTable="sch_enabledColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="sch_bud_hrs_reg" msprop:Generator_UserColumnName="sch_bud_hrs_reg" msprop:Generator_ColumnPropNameInRow="sch_bud_hrs_reg" msprop:Generator_ColumnVarNameInTable="columnsch_bud_hrs_reg" msprop:Generator_ColumnPropNameInTable="sch_bud_hrs_regColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="UOM" msprop:Generator_UserColumnName="UOM" msprop:Generator_ColumnPropNameInRow="UOM" msprop:Generator_ColumnVarNameInTable="columnUOM" msprop:Generator_ColumnPropNameInTable="UOMColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:costing_equipment_class" />
+      <xs:field xpath="mstns:cer_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

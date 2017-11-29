@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WO_Setup", "WO_Setup.csproj", "{623DABB4-2652-4F27-80B2-C881D91BEF4B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{419512E0-3E3F-4FE1-8BE5-ECE7DF9861DE} = {419512E0-3E3F-4FE1-8BE5-ECE7DF9861DE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{CFFC25E9-6AC9-4716-9E09-97F08702A403}"
+	ProjectSection(ProjectDependencies) = postProject
+		{623DABB4-2652-4F27-80B2-C881D91BEF4B} = {623DABB4-2652-4F27-80B2-C881D91BEF4B}
+		{419512E0-3E3F-4FE1-8BE5-ECE7DF9861DE} = {419512E0-3E3F-4FE1-8BE5-ECE7DF9861DE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FAPayRateSchedule", "..\..\..\APPLICATIONADMINISTRATOR\FIXEDASSETS\FAPAYRATESCHEDULE\FAPAYRATESCHEDULE\FAPayRateSchedule.csproj", "{419512E0-3E3F-4FE1-8BE5-ECE7DF9861DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{623DABB4-2652-4F27-80B2-C881D91BEF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623DABB4-2652-4F27-80B2-C881D91BEF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623DABB4-2652-4F27-80B2-C881D91BEF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623DABB4-2652-4F27-80B2-C881D91BEF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFFC25E9-6AC9-4716-9E09-97F08702A403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFFC25E9-6AC9-4716-9E09-97F08702A403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFFC25E9-6AC9-4716-9E09-97F08702A403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFFC25E9-6AC9-4716-9E09-97F08702A403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{419512E0-3E3F-4FE1-8BE5-ECE7DF9861DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{419512E0-3E3F-4FE1-8BE5-ECE7DF9861DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{419512E0-3E3F-4FE1-8BE5-ECE7DF9861DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{419512E0-3E3F-4FE1-8BE5-ECE7DF9861DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBillThresh" targetNamespace="http://tempuri.org/dsBillThresh.xsd" xmlns:mstns="http://tempuri.org/dsBillThresh.xsd" xmlns="http://tempuri.org/dsBillThresh.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBillThresh" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBillThresh" msprop:Generator_DataSetName="dsBillThresh">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="proj_bill_thresh" msprop:Generator_UserTableName="proj_bill_thresh" msprop:Generator_RowDeletedName="proj_bill_threshRowDeleted" msprop:Generator_TableClassName="proj_bill_threshDataTable" msprop:Generator_RowChangedName="proj_bill_threshRowChanged" msprop:Generator_RowClassName="proj_bill_threshRow" msprop:Generator_RowChangingName="proj_bill_threshRowChanging" msprop:Generator_RowEvArgName="proj_bill_threshRowChangeEvent" msprop:Generator_RowEvHandlerName="proj_bill_threshRowChangeEventHandler" msprop:Generator_TablePropName="proj_bill_thresh" msprop:Generator_TableVarName="tableproj_bill_thresh" msprop:Generator_RowDeletingName="proj_bill_threshRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pbt_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="pbt_id" msprop:Generator_ColumnPropNameInRow="pbt_id" msprop:Generator_ColumnVarNameInTable="columnpbt_id" msprop:Generator_ColumnPropNameInTable="pbt_idColumn" type="xs:int" />
+              <xs:element name="pri_id" msprop:Generator_UserColumnName="pri_id" msprop:Generator_ColumnPropNameInRow="pri_id" msprop:Generator_ColumnVarNameInTable="columnpri_id" msprop:Generator_ColumnPropNameInTable="pri_idColumn" type="xs:int" />
+              <xs:element name="pbt_type" msprop:Generator_UserColumnName="pbt_type" msprop:Generator_ColumnPropNameInRow="pbt_type" msprop:Generator_ColumnVarNameInTable="columnpbt_type" msprop:Generator_ColumnPropNameInTable="pbt_typeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="pbt_ot" msprop:Generator_UserColumnName="pbt_ot" msprop:Generator_ColumnPropNameInRow="pbt_ot" msprop:Generator_ColumnVarNameInTable="columnpbt_ot" msprop:Generator_ColumnPropNameInTable="pbt_otColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pbt_dt" msprop:Generator_UserColumnName="pbt_dt" msprop:Generator_ColumnPropNameInRow="pbt_dt" msprop:Generator_ColumnVarNameInTable="columnpbt_dt" msprop:Generator_ColumnPropNameInTable="pbt_dtColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pbt_week_ot" msprop:Generator_UserColumnName="pbt_week_ot" msprop:Generator_ColumnPropNameInRow="pbt_week_ot" msprop:Generator_ColumnVarNameInTable="columnpbt_week_ot" msprop:Generator_ColumnPropNameInTable="pbt_week_otColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="pbt_week_dt" msprop:Generator_UserColumnName="pbt_week_dt" msprop:Generator_ColumnPropNameInRow="pbt_week_dt" msprop:Generator_ColumnVarNameInTable="columnpbt_week_dt" msprop:Generator_ColumnPropNameInTable="pbt_week_dtColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:proj_bill_thresh" />
+      <xs:field xpath="mstns:pbt_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

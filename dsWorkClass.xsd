@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWorkClass" targetNamespace="http://tempuri.org/dsWorkClass.xsd" xmlns:mstns="http://tempuri.org/dsWorkClass.xsd" xmlns="http://tempuri.org/dsWorkClass.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWorkClass" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWorkClass" msprop:Generator_DataSetName="dsWorkClass">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="work_class" msprop:Generator_UserTableName="work_class" msprop:Generator_RowDeletedName="work_classRowDeleted" msprop:Generator_TableClassName="work_classDataTable" msprop:Generator_RowChangedName="work_classRowChanged" msprop:Generator_RowClassName="work_classRow" msprop:Generator_RowChangingName="work_classRowChanging" msprop:Generator_RowEvArgName="work_classRowChangeEvent" msprop:Generator_RowEvHandlerName="work_classRowChangeEventHandler" msprop:Generator_TablePropName="work_class" msprop:Generator_TableVarName="tablework_class" msprop:Generator_RowDeletingName="work_classRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cwc_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="cwc_id" msprop:Generator_ColumnPropNameInRow="cwc_id" msprop:Generator_ColumnVarNameInTable="columncwc_id" msprop:Generator_ColumnPropNameInTable="cwc_idColumn" type="xs:int" />
+              <xs:element name="wc_code" msprop:Generator_UserColumnName="wc_code" msprop:Generator_ColumnPropNameInRow="wc_code" msprop:Generator_ColumnVarNameInTable="columnwc_code" msprop:Generator_ColumnPropNameInTable="wc_codeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="wc_desc" msprop:Generator_UserColumnName="wc_desc" msprop:Generator_ColumnPropNameInRow="wc_desc" msprop:Generator_ColumnVarNameInTable="columnwc_desc" msprop:Generator_ColumnPropNameInTable="wc_descColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Selected" msdata:ReadOnly="true" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:work_class" />
+      <xs:field xpath="mstns:cwc_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

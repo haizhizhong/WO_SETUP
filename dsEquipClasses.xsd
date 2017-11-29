@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsEquipClasses" targetNamespace="http://tempuri.org/dsEquipClasses.xsd" xmlns:mstns="http://tempuri.org/dsEquipClasses.xsd" xmlns="http://tempuri.org/dsEquipClasses.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsEquipClasses" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsEquipClasses" msprop:Generator_DataSetName="dsEquipClasses">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="fa_class" msprop:Generator_UserTableName="fa_class" msprop:Generator_RowDeletedName="fa_classRowDeleted" msprop:Generator_TableClassName="fa_classDataTable" msprop:Generator_RowChangedName="fa_classRowChanged" msprop:Generator_RowClassName="fa_classRow" msprop:Generator_RowChangingName="fa_classRowChanging" msprop:Generator_RowEvArgName="fa_classRowChangeEvent" msprop:Generator_RowEvHandlerName="fa_classRowChangeEventHandler" msprop:Generator_TablePropName="fa_class" msprop:Generator_TableVarName="tablefa_class" msprop:Generator_RowDeletingName="fa_classRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="facl_code" msprop:Generator_UserColumnName="facl_code" msprop:Generator_ColumnPropNameInRow="facl_code" msprop:Generator_ColumnVarNameInTable="columnfacl_code" msprop:Generator_ColumnPropNameInTable="facl_codeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="facl_desc" msprop:Generator_UserColumnName="facl_desc" msprop:Generator_ColumnPropNameInRow="facl_desc" msprop:Generator_ColumnVarNameInTable="columnfacl_desc" msprop:Generator_ColumnPropNameInTable="facl_descColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:fa_class" />
+      <xs:field xpath="mstns:facl_code" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

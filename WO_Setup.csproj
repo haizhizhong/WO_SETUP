@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{623DABB4-2652-4F27-80B2-C881D91BEF4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WO_Setup</RootNamespace>
+    <AssemblyName>WO_Setup</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\DotNetCompileDirectory%28no running%29\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Pdf.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v16.2.Core, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v16.2, Version=16.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FADO, Version=1.0.3605.22780, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetCompileDirectory(no running)\FADO.dll</HintPath>
+    </Reference>
+    <Reference Include="FAPayRateSchedule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetCompileDirectory(no running)\FAPayRateSchedule.dll</HintPath>
+    </Reference>
+    <Reference Include="GL_Account_Lookup_Rep, Version=1.0.3736.28750, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="GridG, Version=1.0.3632.16687, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetCompileDirectory(no running)\GridG.dll</HintPath>
+    </Reference>
+    <Reference Include="HMConnection, Version=1.0.3588.38013, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetCompileDirectory(no running)\HMConnection.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TUC_HMDevXManager, Version=1.0.3589.15831, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetCompileDirectory(no running)\TUC_HMDevXManager.dll</HintPath>
+    </Reference>
+    <Reference Include="WorkOrder_Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="WS_Popups, Version=1.0.3589.16129, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\DotNetCompileDirectory(no running)\WS_Popups.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dsBillThresh.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBillThresh.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBurdenSelection.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBurdenSelection.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsBurdenSelection_ProjWO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBurdenSelection_ProjWO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsCostingBurden.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCostingBurden.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsCostingEqiClass.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCostingEqiClass.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsCostingWorkClass.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCostingWorkClass.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEquipClass.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEquipClass.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEquipClasses.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEquipClasses.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsEquipClassSelection.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEquipClassSelection.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOvertimeLimits.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOvertimeLimits.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsOverTimeLimitsList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsOverTimeLimitsList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsProjWO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProjWO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsProjWO_Equi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProjWO_Equi.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsProjWO_WC.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProjWO_WC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsUnitTimeMeasurement.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsUnitTimeMeasurement.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsWorkClass.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWorkClass.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsWorkClasses.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWorkClasses.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsWorkClassSelection.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWorkClassSelection.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadBurdens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadBurdens.Designer.cs">
+      <DependentUpon>frmLoadBurdens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadEquiClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadEquiClasses.Designer.cs">
+      <DependentUpon>frmLoadEquiClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadWorkClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadWorkClasses.Designer.cs">
+      <DependentUpon>frmLoadWorkClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucSetup_Burden.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSetup_Burden.Designer.cs">
+      <DependentUpon>ucSetup_Burden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSetup_EqiClasses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSetup_EqiClasses.Designer.cs">
+      <DependentUpon>ucSetup_EqiClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSetup_OvertimeLimits_BillingThresholds.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSetup_OvertimeLimits_BillingThresholds.Designer.cs">
+      <DependentUpon>ucSetup_OvertimeLimits_BillingThresholds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucSetup_WorkClasses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucSetup_WorkClasses.Designer.cs">
+      <DependentUpon>ucSetup_WorkClasses.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmLoadBurdens.resx">
+      <DependentUpon>frmLoadBurdens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadEquiClasses.resx">
+      <DependentUpon>frmLoadEquiClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadWorkClasses.resx">
+      <DependentUpon>frmLoadWorkClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="ucSetup_Burden.resx">
+      <DependentUpon>ucSetup_Burden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSetup_EqiClasses.resx">
+      <DependentUpon>ucSetup_EqiClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSetup_OvertimeLimits_BillingThresholds.resx">
+      <DependentUpon>ucSetup_OvertimeLimits_BillingThresholds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSetup_WorkClasses.resx">
+      <DependentUpon>ucSetup_WorkClasses.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dsBillThresh.xsc">
+      <DependentUpon>dsBillThresh.xsd</DependentUpon>
+    </None>
+    <None Include="dsBillThresh.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBillThresh.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBillThresh.xss">
+      <DependentUpon>dsBillThresh.xsd</DependentUpon>
+    </None>
+    <None Include="dsBurdenSelection.xsc">
+      <DependentUpon>dsBurdenSelection.xsd</DependentUpon>
+    </None>
+    <None Include="dsBurdenSelection.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBurdenSelection.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBurdenSelection.xss">
+      <DependentUpon>dsBurdenSelection.xsd</DependentUpon>
+    </None>
+    <None Include="dsBurdenSelection_ProjWO.xsc">
+      <DependentUpon>dsBurdenSelection_ProjWO.xsd</DependentUpon>
+    </None>
+    <None Include="dsBurdenSelection_ProjWO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBurdenSelection_ProjWO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsBurdenSelection_ProjWO.xss">
+      <DependentUpon>dsBurdenSelection_ProjWO.xsd</DependentUpon>
+    </None>
+    <None Include="dsCostingBurden.xsc">
+      <DependentUpon>dsCostingBurden.xsd</DependentUpon>
+    </None>
+    <None Include="dsCostingBurden.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCostingBurden.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsCostingBurden.xss">
+      <DependentUpon>dsCostingBurden.xsd</DependentUpon>
+    </None>
+    <None Include="dsCostingEqiClass.xsc">
+      <DependentUpon>dsCostingEqiClass.xsd</DependentUpon>
+    </None>
+    <None Include="dsCostingEqiClass.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCostingEqiClass.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsCostingEqiClass.xss">
+      <DependentUpon>dsCostingEqiClass.xsd</DependentUpon>
+    </None>
+    <None Include="dsCostingWorkClass.xsc">
+      <DependentUpon>dsCostingWorkClass.xsd</DependentUpon>
+    </None>
+    <None Include="dsCostingWorkClass.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCostingWorkClass.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsCostingWorkClass.xss">
+      <DependentUpon>dsCostingWorkClass.xsd</DependentUpon>
+    </None>
+    <None Include="dsEquipClass.xsc">
+      <DependentUpon>dsEquipClass.xsd</DependentUpon>
+    </None>
+    <None Include="dsEquipClass.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEquipClass.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEquipClass.xss">
+      <DependentUpon>dsEquipClass.xsd</DependentUpon>
+    </None>
+    <None Include="dsEquipClasses.xsc">
+      <DependentUpon>dsEquipClasses.xsd</DependentUpon>
+    </None>
+    <None Include="dsEquipClasses.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEquipClasses.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEquipClasses.xss">
+      <DependentUpon>dsEquipClasses.xsd</DependentUpon>
+    </None>
+    <None Include="dsEquipClassSelection.xsc">
+      <DependentUpon>dsEquipClassSelection.xsd</DependentUpon>
+    </None>
+    <None Include="dsEquipClassSelection.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEquipClassSelection.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsEquipClassSelection.xss">
+      <DependentUpon>dsEquipClassSelection.xsd</DependentUpon>
+    </None>
+    <None Include="dsOvertimeLimits.xsc">
+      <DependentUpon>dsOvertimeLimits.xsd</DependentUpon>
+    </None>
+    <None Include="dsOvertimeLimits.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOvertimeLimits.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOvertimeLimits.xss">
+      <DependentUpon>dsOvertimeLimits.xsd</DependentUpon>
+    </None>
+    <None Include="dsOverTimeLimitsList.xsc">
+      <DependentUpon>dsOverTimeLimitsList.xsd</DependentUpon>
+    </None>
+    <None Include="dsOverTimeLimitsList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsOverTimeLimitsList.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsOverTimeLimitsList.xss">
+      <DependentUpon>dsOverTimeLimitsList.xsd</DependentUpon>
+    </None>
+    <None Include="dsProjWO.xsc">
+      <DependentUpon>dsProjWO.xsd</DependentUpon>
+    </None>
+    <None Include="dsProjWO.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProjWO.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsProjWO.xss">
+      <DependentUpon>dsProjWO.xsd</DependentUpon>
+    </None>
+    <None Include="dsProjWO_Equi.xsc">
+      <DependentUpon>dsProjWO_Equi.xsd</DependentUpon>
+    </None>
+    <None Include="dsProjWO_Equi.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProjWO_Equi.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsProjWO_Equi.xss">
+      <DependentUpon>dsProjWO_Equi.xsd</DependentUpon>
+    </None>
+    <None Include="dsProjWO_WC.xsc">
+      <DependentUpon>dsProjWO_WC.xsd</DependentUpon>
+    </None>
+    <None Include="dsProjWO_WC.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProjWO_WC.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsProjWO_WC.xss">
+      <DependentUpon>dsProjWO_WC.xsd</DependentUpon>
+    </None>
+    <None Include="dsUnitTimeMeasurement.xsc">
+      <DependentUpon>dsUnitTimeMeasurement.xsd</DependentUpon>
+    </None>
+    <None Include="dsUnitTimeMeasurement.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUnitTimeMeasurement.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsUnitTimeMeasurement.xss">
+      <DependentUpon>dsUnitTimeMeasurement.xsd</DependentUpon>
+    </None>
+    <None Include="dsWorkClass.xsc">
+      <DependentUpon>dsWorkClass.xsd</DependentUpon>
+    </None>
+    <None Include="dsWorkClass.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWorkClass.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsWorkClass.xss">
+      <DependentUpon>dsWorkClass.xsd</DependentUpon>
+    </None>
+    <None Include="dsWorkClasses.xsc">
+      <DependentUpon>dsWorkClasses.xsd</DependentUpon>
+    </None>
+    <None Include="dsWorkClasses.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWorkClasses.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsWorkClasses.xss">
+      <DependentUpon>dsWorkClasses.xsd</DependentUpon>
+    </None>
+    <None Include="dsWorkClassSelection.xsc">
+      <DependentUpon>dsWorkClassSelection.xsd</DependentUpon>
+    </None>
+    <None Include="dsWorkClassSelection.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWorkClassSelection.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsWorkClassSelection.xss">
+      <DependentUpon>dsWorkClassSelection.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
